@@ -1,0 +1,36 @@
+query GetCharacters($page: Int!, $filter: FilterCharacter) {
+  characters(page: $page, filter: $filter) {
+    info {
+      count
+      next
+      pages
+    }
+    results {
+      id
+      name
+      status
+      species
+      gender
+      image
+      location {
+        name
+      }
+    }
+  }
+}
+
+query GetCharacterCountByStatus($status: String!) {
+  characters(filter: { status: $status }) {
+    info {
+      count
+    }
+  }
+}
+
+query GetCharacterCountBySpecies($species: String!) {
+  characters(filter: { species: $species }) {
+    info {
+      count
+    }
+  }
+}

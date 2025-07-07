@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rick and Morty Code Challenge
 
-## Getting Started
-
-First, run the development server:
+## How to run locally?
 
 ```bash
+# Install dependencies
+npm install
+
+# Create a .env file at the root of the project with the following:
+NEXT_PUBLIC_GRAPHQL_API_URL=https://rickandmortyapi.com/graphql
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Run unit tests
+npm run test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- The UI is divided into two main sections at the top of the page, each occupying half the screen for improved readability when displaying data.
+- Three additional cards are displayed at the bottom to show extra insights in a simplified format, using titles and summary numbers.
+- Atomic Design methodology is used to organize components, improving scalability, maintainability, and reusability.
+- Custom React hooks abstract GraphQL fetching logic via Apollo and GraphQL Codegen, ensuring type safety and modularity.
+- Performance is enhanced with memoized values and callbacks.
+- The entire codebase is strongly typed using TypeScript.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
 
-## Learn More
+- **Next.js**: Starting point to create the React app
+- **TypeScript**: Type safety across the app
+- **Apollo Client**: Data fetching with GraphQL
+- **Codegen**: Type-safe GraphQL hooks based on schema
+- **Tailwind CSS**: Styling
+- **React Testing Library + Jest**: Unit testing
+- **Recharts**: Chart
+- **ESLint + Prettier**: Code quality and formatting
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Character Table
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Infinite scroll to load characters
+- Filtering by name (via URL param and search input)
 
-## Deploy on Vercel
+### Chart
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Pie chart of number of characters by location
+- Less than 10 characters by location are grouped to make the chart more meaningful
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Additional
+
+- Section to show count of alive characters
+- Section to show count of human characters
+- Section to show count of locations
+
+### What was left?
+
+- Complete unit tests for all components and hooks created.
+
+### Demo
+
+https://rickandmorty-code-challenge.vercel.app/

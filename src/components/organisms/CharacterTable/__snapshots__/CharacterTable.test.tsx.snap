@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`CharacterTable Snapshot should match snapshot 1`] = `
+<div>
+  <div
+    class="relative"
+  >
+    <div
+      class="w-screen-minus-16 relative h-[400px] overflow-auto rounded-lg border border-gray-300 lg:h-[600px] lg:w-full"
+    >
+      <table
+        class="relative w-[600px] table-auto text-left text-sm sm:w-full"
+      >
+        <thead
+          class="sticky top-0 z-10 bg-gray-100"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="p-2 text-left font-semibold text-gray-700 lg:p-4"
+            >
+              Character
+            </th>
+            <th
+              class="p-2 text-left font-semibold text-gray-700 lg:p-4"
+            >
+              Status
+            </th>
+            <th
+              class="p-2 text-left font-semibold text-gray-700 lg:p-4"
+            >
+              Species
+            </th>
+            <th
+              class="p-2 text-left font-semibold text-gray-700 lg:p-4"
+            >
+              Gender
+            </th>
+            <th
+              class="p-2 text-left font-semibold text-gray-700 lg:p-4"
+            >
+              Location
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="divide-y divide-gray-200"
+        >
+          <tr
+            class="odd:bg-white even:bg-gray-50 hover:bg-gray-100"
+          >
+            <td
+              class="p-2 lg:p-4 min-w-[200px]"
+            >
+              <div
+                class="flex items-center gap-4"
+              >
+                <img
+                  alt="Rick Sanchez"
+                  class="rounded-full"
+                  data-nimg="1"
+                  decoding="async"
+                  height="40"
+                  loading="lazy"
+                  src="/_next/image?url=https%3A%2F%2Frickandmortyapi.com%2Fapi%2Fcharacter%2Favatar%2F1.jpeg&w=96&q=75"
+                  srcset="/_next/image?url=https%3A%2F%2Frickandmortyapi.com%2Fapi%2Fcharacter%2Favatar%2F1.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Frickandmortyapi.com%2Fapi%2Fcharacter%2Favatar%2F1.jpeg&w=96&q=75 2x"
+                  style="color: transparent;"
+                  width="40"
+                />
+                <span
+                  class="font-medium text-gray-900"
+                >
+                  Rick Sanchez
+                </span>
+              </div>
+            </td>
+            <td
+              class="p-2 lg:p-4"
+            >
+              <span
+                class="rounded-full px-3 py-1 text-xs font-semibold bg-green-100 text-green-800"
+              >
+                ALIVE
+              </span>
+            </td>
+            <td
+              class="p-2 lg:p-4"
+            >
+              Human
+            </td>
+            <td
+              class="p-2 lg:p-4"
+            >
+              Male
+            </td>
+            <td
+              class="p-2 lg:p-4"
+            >
+              Citadel of Ricks
+            </td>
+          </tr>
+          <tr
+            class="odd:bg-white even:bg-gray-50 hover:bg-gray-100"
+          >
+            <td
+              class="p-2 lg:p-4 min-w-[200px]"
+            >
+              <div
+                class="flex items-center gap-4"
+              >
+                <img
+                  alt="Morty Smith"
+                  class="rounded-full"
+                  data-nimg="1"
+                  decoding="async"
+                  height="40"
+                  loading="lazy"
+                  src="/_next/image?url=https%3A%2F%2Frickandmortyapi.com%2Fapi%2Fcharacter%2Favatar%2F2.jpeg&w=96&q=75"
+                  srcset="/_next/image?url=https%3A%2F%2Frickandmortyapi.com%2Fapi%2Fcharacter%2Favatar%2F2.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Frickandmortyapi.com%2Fapi%2Fcharacter%2Favatar%2F2.jpeg&w=96&q=75 2x"
+                  style="color: transparent;"
+                  width="40"
+                />
+                <span
+                  class="font-medium text-gray-900"
+                >
+                  Morty Smith
+                </span>
+              </div>
+            </td>
+            <td
+              class="p-2 lg:p-4"
+            >
+              <span
+                class="rounded-full px-3 py-1 text-xs font-semibold bg-green-100 text-green-800"
+              >
+                ALIVE
+              </span>
+            </td>
+            <td
+              class="p-2 lg:p-4"
+            >
+              Human
+            </td>
+            <td
+              class="p-2 lg:p-4"
+            >
+              Male
+            </td>
+            <td
+              class="p-2 lg:p-4"
+            >
+              Citadel of Ricks
+            </td>
+          </tr>
+          <tr
+            class=""
+          >
+            <td
+              class="p-2 lg:p-4 col-span-4 w-full text-center"
+              colspan="4"
+            >
+              No more characters to load
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
